@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block title %}
+    Booklist - Book Store
+{% endblock %}
+
+{% block content %}
+<!--jinja templating-->
+
+<div class="container-fluid mt-4">
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped table-hover">
+      <thead class="table-dark">
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Price</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>The Silent Forest</td>
+          <td>Emily Carter</td>
+          <td>ksh 1800</td>
+          <td>A suspenseful mystery set in a remote woodland town.</td>
+        </tr>
+        <tr>
+          <td>Digital Horizons</td>
+          <td>Michael Grant</td>
+          <td>ksh 2500</td>
+          <td>An exploration of emerging technologies shaping the future.</td>
+        </tr>
+        <tr>
+          <td>Waves of Destiny</td>
+          <td>Sophia Ramirez</td>
+          <td>ksh 1600</td>
+          <td>A heartfelt romance unfolding by the seaside.</td>
+        </tr>
+        <tr>
+          <td>The Art of Simplicity</td>
+          <td>Daniel Lee</td>
+          <td>ksh 2100</td>
+          <td>A practical guide to minimalist living and productivity.</td>
+        </tr>
+        <tr>
+          <td>Shadow of the Crown</td>
+          <td>Isabella Knight</td>
+          <td>ksh 2700</td>
+          <td>An epic fantasy tale of power, betrayal, and courage.</td>
+        </tr>
+        <tr>
+          <td>Mind Over Matter</td>
+          <td>Robert Hughes</td>
+          <td>ksh 1100</td>
+          <td>Insights into mastering mindset for personal success.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+{% endblock %}
