@@ -1,11 +1,13 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
     <title>Title</title>
-    <link rel="stylesheet" href="../../static/assets/styles/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="../../static/assets/styles/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'assets/styles/main.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'assets/images/fravicon.png' %}">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-primary-subtle">
@@ -49,6 +51,6 @@
     <p> &copy;2026 Book store | All rights reserved</p>
 </footer>
 
-<script src="../../static/assets/styles/bootstrap/js/bootstrap.bundle.js"> </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"> </script>
 </body>
 </html>

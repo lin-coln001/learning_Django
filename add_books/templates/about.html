@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}
     About - Book store
 {% endblock %}
@@ -16,13 +17,13 @@
 
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="../../static/assets/images/lib_3.jpg" class="d-block w-100 rounded" alt="...">
+        <img src="{% static 'assets/images/lib_1.jpg' %}" class="d-block w-100 rounded" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="../../static/assets/images/lib_2.jpg" class="d-block w-100 rounded" alt="...">
+        <img src="{% static 'assets/images/lib_2.jpg' %}" class="d-block w-100 rounded" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="../../static/assets/images/lib_1.jpg" class="d-block w-100 rounded" alt="...">
+        <img src="{% static 'assets/images/lib_3.jpg' %}" class="d-block w-100 rounded" alt="...">
       </div>
     </div>
 
